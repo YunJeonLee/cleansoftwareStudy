@@ -4,9 +4,13 @@ Chap 16. 싱글톤과 모노스테이트 패턴
  -> 해당 클래스는 주로 루트(root)의 역할을 한다.  
  
   1. 싱글톤 패턴(Singleton Pattern)  
-	(ex) ConsumerContainerFactoryDelegatorConfig.java  
-	    참고 : http://zgundam.tistory.com/26
-	    	
+	(ex 1) ConsumerContainerFactoryDelegatorConfig.java  
+	    참고 : http://zgundam.tistory.com/26  
+	(ex 2) Springframework 구현에서의 예제: DefaultListableBeanFactory.java    
+		ConfigurableBeanFactory.java의 scope identifier "singleton"의 구현체 중	DefaultListableBeanFactory.java 를 보면,  
+		Inner class 로 javaxInjectProviderClass가 private static 으로 선언되어 있다. 
+
+  	    	
   2. 모노스테이트 패턴(Monostate Pattern)  
 	-> 2개의 인스턴스가 같은 객체의 서로 다른 이름을 갖고 있는 것  
 	  (모든 변수를 정적으로 만들어 객체가 같은 변수를 공유  
