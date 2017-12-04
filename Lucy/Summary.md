@@ -4,7 +4,9 @@ Chap 16. 싱글톤과 모노스테이트 패턴
  -> 해당 클래스는 주로 루트(root)의 역할을 한다.  
  
   1. 싱글톤 패턴(Singleton Pattern)  
-	:    	
+	(ex) ConsumerContainerFactoryDelegatorConfig.java  
+	    참고 : http://zgundam.tistory.com/26
+	    	
   2. 모노스테이트 패턴(Monostate Pattern)  
 	-> 2개의 인스턴스가 같은 객체의 서로 다른 이름을 갖고 있는 것  
 	  (모든 변수를 정적으로 만들어 객체가 같은 변수를 공유  
