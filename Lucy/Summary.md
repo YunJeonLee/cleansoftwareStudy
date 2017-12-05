@@ -9,7 +9,7 @@ Chap 16. 싱글톤과 모노스테이트 패턴
 	(ex 2) Springframework 구현에서의 예제: DefaultListableBeanFactory.java    
 		ConfigurableBeanFactory.java의 scope identifier "singleton"의 구현체 중	DefaultListableBeanFactory.java 를 보면,  
 		Inner class 로 javaxInjectProviderClass가 private static 으로 선언되어 있다.  
-		(*) scope가 singleton이면 autowiring될 때 singleton 클래스로 생성된다.
+		(*추가) scope가 singleton이면 autowiring될 때 singleton 클래스로 생성된다.
 	(ex 3) Springframework 구현에서의 예제: TrueMethodMatcher.java  
 		
 	(!Q) NotUsed.scala ??? 
@@ -29,5 +29,5 @@ Chap 17. 널 오브젝트 패턴
  (ex) interface Employee에 대해  
       일반적인 구현 EmployeeImplementation 외에  
       null 처리를 위한 NullEmployee 를 통해 실패한 경우에도 항상 유효한 객체를 반환하도록 함  
- (*) org.elasticsearch.cluster.ClusterName: DEFAULT
- (*) BackOfficeUserHolder: BackofficeUser.undefinedUser()
+ (*추가) org.elasticsearch.cluster.ClusterName: DEFAULT  
+ (*추가) BackOfficeUserHolder: BackofficeUser.undefinedUser()  
