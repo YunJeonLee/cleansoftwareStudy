@@ -8,8 +8,10 @@ Chap 16. 싱글톤과 모노스테이트 패턴
 	    참고 : http://zgundam.tistory.com/26  
 	(ex 2) Springframework 구현에서의 예제: DefaultListableBeanFactory.java    
 		ConfigurableBeanFactory.java의 scope identifier "singleton"의 구현체 중	DefaultListableBeanFactory.java 를 보면,  
-		Inner class 로 javaxInjectProviderClass가 private static 으로 선언되어 있다. 
-	(!Q) NotUsed.scala ???  
+		Inner class 로 javaxInjectProviderClass가 private static 으로 선언되어 있다.  
+	(ex 3) Springframework 구현에서의 예제: TrueMethodMatcher.java  
+		
+	(!Q) NotUsed.scala ??? 
 
   	    	
   2. 모노스테이트 패턴(Monostate Pattern)  
